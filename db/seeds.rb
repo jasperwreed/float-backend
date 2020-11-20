@@ -19,6 +19,25 @@ u5 = User.create(name: 'pete4', age: 20, bio: 'food', username: 'pet', email: 'p
 
 
 p1 = Post.create(text: 'great day working on my mod 5 project', user_id: User.first.id)
+p2 = Post.create(text: 'javascript is more fun than ruby... tell me im wrong, i dare you', user_id: User.first.id)
+p3 = Post.create(text: 'feeling confident with reatjs', user_id: User.first.id)
+p4 = Post.create(text: 'being stuch in an alert loop >>>', user_id: User.first.id)
+p5 = Post.create(text: 'Learning reactjs is a blessing and a curse...', user_id: User.first.id)
+p6 = Post.create(text: 'how has programming / coding changed your life?', user_id: User.first.id)
+p7 = Post.create(text: 'who wishes javascript had a built in countdown timer function', user_id: User.first.id)
+p8 = Post.create(text: 'small win, but still a win... finally had time to work on my personal website', user_id: User.first.id)
+p9 = Post.create(text: 'working on connecting javascript with ruby / rails. getting used to going back and fourth between different languages', user_id: User.first.id)
+p10 = Post.create(text: 'ready to hoop today', user_id: User.second.id)
+p11 = Post.create(text: 'tired... so tired', user_id: User.second.id)
+p12 = Post.create(text: 'mcdonalds still have for four for?', user_id: User.second.id)
+p13 = Post.create(text: 'MARIO CARTTTTTT', user_id: User.third.id)
+p14 = Post.create(text: 'pizza is a vegetable', user_id: User.third.id)
+p15 = Post.create(text: 'i want a sandwich', user_id: User.third.id)
+p16 = Post.create(text: 'cats own us...', user_id: User.second.id)
+p17 = Post.create(text: 'oh yeah', user_id: User.fourth.id)
+p18 = Post.create(text: 'there is too much time not to do anything', user_id: User.fourth.id)
+p19 = Post.create(text: 'you already know', user_id: User.fifth.id)
+p20 = Post.create(text: 'programmer... what can i say', user_id: User.fourth.id)
 
 c1 = Comment.create(text: 'great post!!', post_id: Post.first.id, user_id: User.second.id)
 
