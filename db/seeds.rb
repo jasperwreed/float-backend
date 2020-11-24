@@ -41,7 +41,7 @@ p20 = Post.create(text: 'programmer... what can i say', user_id: User.fourth.id)
 
 c1 = Comment.create(text: 'great post!!', post_id: Post.first.id, user_id: User.second.id)
 
-l1 = Like.create(count: 1, user_id: User.second.id, post_id: Post.first.id)
-l2 = Like.create(count: 1, user_id: User.third.id, post_id: Post.first.id)
-l3 = Like.create(count: 1, user_id: User.fourth.id, post_id: Post.first.id)
-l4 = Like.create(count: 1, user_id: User.fifth.id, post_id: Post.first.id)
+l1 = Like.create(user_id: User.second.id, post_id: Post.first.id)
+l2 = Like.create(user_id: User.third.id, post_id: Post.first.id)
+l3 = Like.create(user_id: User.fourth.id, post_id: Post.first.id)
+l4 = Like.create(user_id: User.fifth.id, post_id: Post.first.id)
