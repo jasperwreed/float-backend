@@ -18,6 +18,15 @@ class PostsController < ApplicationController
         end
     end
 
+    def destroy
+        post = Post.find(params[:id])
+        post.likes.destroy_all
+        post.comments.destroy_all
+
+        post.destroy
+        render json: { message: 'Post Deleted' }
+    end
+
     private 
 
     def post_params
