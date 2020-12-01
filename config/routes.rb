@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :comments
   resources :posts
   resources :users
+  resources :followerships
 
   post '/login', to: 'users#login'
   get '/profile', to: 'users#profile'
