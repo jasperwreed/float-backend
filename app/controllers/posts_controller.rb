@@ -2,7 +2,7 @@ class PostsController < ApplicationController
     skip_before_action :authorized
     
     def index
-        posts = Post.all 
+        posts = Post.all.order({ created_at: :desc })
         render json: {post: PostSerializer.new(posts)}
     end
 
